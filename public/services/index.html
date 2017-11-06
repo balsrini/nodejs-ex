@@ -1,0 +1,119 @@
+<html>
+<head>
+<title>Medmanage Services</title>
+<link rel="stylesheet" type="text/css" href="services.css" media="screen" />
+<script type="text/javascript" src="servicesdata.js" ></script>
+<script type="text/javascript" src="services.js" ></script>
+</head>
+
+<body>
+  <p>This is the list of services available from this site</p>
+
+  <div id="toc">
+    <div id="category" class="category"></div>
+    <div id="servicesblock" class="servicesblock"></div>
+    <div id="details" class="details"></div>
+    <div id="servicedetail" class="customer servicedesc">
+      <table style="width: 100%" border="1">
+        <!--tr>
+          <td class="prefix">Name</td>
+          <td class="value"><label id="name"></label><td>
+        </tr-->
+        
+         <tr style="width: 100%">
+          <td class="prefix">Description</td>
+          <td style="width: 100%" class="value"><input style="width: 100%" type=text id="desc"></input><td>
+        </tr>
+        
+         <tr>
+          <td class="prefix">Method</td>
+          <td class="value"><input style="width: 100%" type=text id="method"></input><td>
+        </tr>
+        
+         <tr>
+          <td class="prefix">URL</td>
+          <td class="value"><input style="width: 100%" type=text id="url"></input><td>
+        </tr>
+        
+         <tr>
+          <td class="prefix">Data</td>
+          <td class="value"><pre><textarea style="width: 100%" id="data" style="height:150px"></textarea></pre><td>
+        </tr>
+      </table>
+      <br/>
+      <input id="postButton" align="center" style="width: 25%" type="submit" value="Try It"></input>
+
+    </div>
+  </div>
+  <div>
+  <pre>
+    Always use these HTTP Headers when requesting for the service
+
+    <b>Content-Type</b>: application/json
+    <b>Accept</b>: application/json 
+
+  </pre>
+  </div>
+
+
+<!--   
+	For example, from a REST client
+	   URL    : <label id="url">http://medmanage.sytes.net/orders/new</label>
+	   TYPE   : <label id="method">Method</label>
+	   Data   : <label id="data">
+		 	{
+				"customerContact" : "9902455333", 
+				"vendorContact" : 918028450292, 
+				"drugList": [
+	  				{"drugName":"Dolo", "strength":"650mg", "quantity":"15"},
+	  				{"drugName":"Saridon","strength":"500mg","quantity":"30"}
+				]
+			}
+		</label>
+-->
+
+<!--
+<br/>
+<h2>Login Services</h2>
+<pre>
+<a href="#">/login</a>                      // RequiresLogin Form
+<a href="#">/login/:contact</a>             //Login action
+	
+
+<h2>CUSTOMER Services</h2>
+<a href="#">/customer/new</a>               //Register new customer
+<a href="#">/customer/:contact</a>          //Get customer profile
+<a href="#">/customer/update/:contact</a>   //Update customer profile
+<a href="#">/customer/login/:contact</a>    //Login action
+
+
+<h2>VENDOR Services</h2>
+<a href="#">/vendor/new</a>	                //Register new vendor
+<a href="#">/vendor/:contact</a>            //Get vendor profile
+<a href="#">/vendor/update/:contact</a>     //Update vendor profile
+//app.post('/vendor/login/:contact</a>      //Login action
+
+<h2>USER DRUG PRESCRIPTION ROUTES</h2>
+<a href="#">/prescription/new</a>
+<a href="#">/prescription/new</a>
+<a href="#">/prescription/byuser/:contact</a>
+
+<h2>DRUG ROUTES</h2>
+<a href="#">/drug/new</a>
+<a href="#">/drug/new</a>
+
+<h2>ORDER ROUTES - DONE & TESTED</h2>
+<a href="#">/orders/new</a>
+<a href="#">/orders/update/:orderId</a>
+<a href="#">/orders/customer/:customerContact</a>
+<a href="#">/orders/order/:orderId</a>
+<a href="#">/orders/customer/:contact/:status</a>
+<a href="#">/orders/vendor/:contact/:status</a>
+<a href="#">/orders/customer/:contact</a>
+<a href="#">/orders/vendor/:contact</a>
+</pre>
+-->
+
+</body>
+</html>
+	
